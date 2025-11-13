@@ -10,13 +10,31 @@
   --text-light: #ffffff;
 }
 .profile-img {
-  width: 180px;     /* adjust size (try 160–200px) */
-  height: 180px;
+  width: 250px;     /* adjust size (try 160–200px) */
+  height: 250px;
   border-radius: 50%; /* keeps it circular */
   object-fit: cover;
   margin-bottom: 1rem;
   border: 4px solid #2b4d39; /* optional - nice border */
 }
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.15);
+}
+
 
 
 /* Global Reset */
@@ -97,7 +115,6 @@ h1, h2, h3, h4 {
   margin-bottom: 25px;
   border-left: 6px solid var(--primary);
 }
-
 /* Contact cards */
 .contact-card {
   background: var(--bg-card);
@@ -128,9 +145,8 @@ h1, h2, h3, h4 {
     color: #0b3d2e;
     transition: all .3s ease;
 }
-
 .contact-row:hover {
-    background: #0b3d2e;
+    background: white;
     color: white;
     transform: translateY(-4px);
 }
@@ -150,6 +166,39 @@ h1, h2, h3, h4 {
 }
 
 
+/* CONTACT SECTION STYLING */
+.contact-container {
+  margin-top: 20px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.contact-row span {
+  font-weight: 600;
+  color: #1b4332; /* Dark green */
+}
+
+.contact-row a {
+  text-decoration: none;
+  color: #1b4332;
+}
+
+.contact-row a:hover {
+  text-decoration: underline;
+}
+
+/* PNG ICON SIZE */
+.contact-png-icon {
+  width: 28px;   /* Adjust size here */
+  height: 28px;
+  object-fit: contain;
+}
 /* Footer */
 footer {
   background: var(--primary);
@@ -165,6 +214,58 @@ footer {
       flex-wrap: wrap;
       gap: 14px;
   }
+}
+
+/* Timeline Section */
+.timeline-section h2 {
+    margin-bottom: 30px;
+    color: #1f421f;
+}
+
+.timeline {
+    border-left: 3px solid #a3b59c;
+    margin-left: 25px;
+    padding-left: 25px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-number {
+    position: absolute;
+    left: -52px;
+    top: 0;
+    background: #f3f6ea;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #8ea88b;
+    color: #1f421f;
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f421f;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    color: #2d3b2d;
+    line-height: 1.6;
+}
+
+
+/* Experience Description Text */
+#experience p {
+    font-size: 18px;          /* increase description size */
+    line-height: 1.8;         /* more comfortable spacing */
+    font-family: 'Inter', sans-serif;
+    color: #333;
 }
 
 
